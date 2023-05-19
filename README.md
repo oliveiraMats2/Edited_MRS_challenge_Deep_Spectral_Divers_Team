@@ -28,7 +28,7 @@ The results of the challenge were summarized and submitted for a joint publicati
    ```bash
    cd [project_directory]
    
-3. Check the Python version and Install the required dependencies:
+3. Check the Python version in requirements.txt and Install the required dependencies:
 
     ```bash
    pip install -r requirements.txt
