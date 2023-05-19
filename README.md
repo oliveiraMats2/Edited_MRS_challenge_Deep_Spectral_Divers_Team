@@ -10,6 +10,8 @@ Participants in the challenge were provided with simulated and in vivo data trai
 
 The results of the challenge were summarized and submitted for a joint publication
 
+Challenge webpage: https://sites.google.com/view/edited-mrs-rec-challenge/home?authuser=0
+
 ## Table of Contents
 
 - [Installation](#installation)
