@@ -14,7 +14,7 @@ The results of the challenge were summarized and submitted for a joint publicati
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [License](#license)
+- [Permissions and citations](#Permissions and citations)
 
 ## Installation
 
@@ -33,7 +33,8 @@ The results of the challenge were summarized and submitted for a joint publicati
     ```bash
    pip install -r requirements.txt
 
+## Permissions and citations
 
-
+If you use our model inference in your research please cite
 
  
