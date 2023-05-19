@@ -41,7 +41,7 @@ Getting the predictions from the models:
 
 1. Ensure you have the test data for each one of the tracks in the right .h5 format.
 
-To execute the model's inference, you must have a h5 file containing the test data for each track, formatted correctly. The h5 file should be structured with the following datasets to ensure compatibility with the provided functions.
+To execute the model's inference, you must have a h5 file containing the test data for each track, formatted correctly. The h5 file should be structured with the following datasets to ensure compatibility:
 
 **For Track 1:**
 
