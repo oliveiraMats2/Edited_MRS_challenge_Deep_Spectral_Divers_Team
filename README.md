@@ -42,9 +42,13 @@ Prepare the input files:
 1. Ensure you have the tracks dataset in the right .h5 format
 2. Run the script:
 
-For Tracks 01 and 02:
+Instructions for Tracks 01 and 02:
 
-    python script.py [config_file] [weights] [test_data_path] [save_file_path]
+    python save_predicts_track01.py [config_file] [weights] [test_data_path] [save_folder_path]
+
+or 
+
+    python save_predicts_track02.py [config_file] [weights] [test_data_path] [save_folder_path]
 
 Replace [config_file] with the path to the YAML configuration for the track.
 
@@ -52,9 +56,11 @@ Replace [weights] with the path to the weights file for the track.
 
 Replace [test_data_path] with the path to the track .h5 file containing the test dataset.
 
+Replace [save_folder_path] with the folder path which the predict .h5 file will be saved.
+
 3. The script will perform inference on each sample in the test dataset using the model.
 
-4. The predicted spectra and ppm values will be saved in an output file named track01.h5 located in the folder [save_file_path] provided.
+4. The predicted spectra and ppm values will be saved in an output file named track01.h5 or track02.h5 located in the folder [save_file_path] provided.
 
 
 ## Citation
