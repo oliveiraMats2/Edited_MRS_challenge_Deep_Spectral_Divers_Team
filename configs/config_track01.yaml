@@ -1,0 +1,90 @@
+#sample_predicted
+for_predict: "split_train_txt/valid.txt"
+
+network: "vit_base_patch32_224"
+learning_rate: 0.0005
+epochs: 100000000000000000000000000000000000000000000000000000000000000000000
+
+reload_model:
+  type: True
+  data: "25_mar"
+
+#----- Train test split
+random_dataset_split:
+  path: 'data/generate_samples'
+  split_train: 0.8
+  seed_split: 12
+
+optimizer:
+  Adam:
+    lr: 0.0001
+    #weight_decay: 0.01
+
+model:
+  TimmSimpleCNN:
+    network: "vit_base_patch32_224"
+    image_size: !!python/tuple [224, 224]
+    nchannels: 3
+    transformers: True
+    pretrained: True
+    num_classes: 0
+    features_only: True
+
+multi_resolution: False
+
+baseline: True
+
+loss:
+  RangeMAELoss: RangeMAELoss
+
+
+#baseline: False
+#
+#loss:
+#  MSELoss: MSELoss
+
+path_to_save_model: "models_h5"
+
+#--- path save model
+path_save_model: 'models_h5/'
+name_model: "vit_base_patch32_224"
+
+#evaluate step mafalda biggest dataset
+evaluate_step: 20000
+
+#----- wandb
+wandb: True
+
+train:
+  batch_size: 80
+
+valid:
+  batch_size: 120
+
+test:
+  batch_size: 1
+
+transfer_learning: False
+#Datasets-------------
+#3
+#633
+train_dataset:
+  DatasetSpectrogramThreeChannelsShiftAugmentation:
+    path_data: None
+    min_shift: 3
+    max_shift: 630
+
+valid_dataset:
+  DatasetSpectrogramThreeChannelsShiftAugmentation:
+    path_data: None
+    min_shift: 3
+    max_shift: 630
+##Datasets-------------
+#train_dataset:
+#  DatasetSpectrogramThreeChannels:
+#    path_data: None
+#
+#
+#valid_dataset:
+#  DatasetSpectrogramThreeChannels:
+#    path_data: None

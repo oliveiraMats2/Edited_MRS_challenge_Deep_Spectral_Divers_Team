@@ -1,0 +1,151 @@
+#sample_predicted
+for_predict: "split_train_txt/valid.txt"
+
+network: "vit_base_patch32_224"
+learning_rate: 0.0005
+epochs: 100
+
+lr_scheduler:
+  scheduler_type: "cosineannealinglr"
+  info:
+    T_max: 100
+    eta_min: 0.000001
+    verbose: True
+
+reload_model:
+  type: True
+  data: "25_mar"
+
+#----- Train test split
+random_dataset_split:
+  path: 'data/generate_samples_track_2'
+  #split_train: 0.8
+  split_train: 9 #[1, 11] # Indice do paciente que eu vou dar split
+  seed_split: 42
+  sorted_data: True
+  k_fold:
+    pacients_all: 12
+    qtd_k_fold_valid: 2
+
+
+
+optimizer:
+  Adam:
+    lr: 0.0001
+    #weight_decay: 0.01
+
+model:
+  TimmSimpleCNN:
+    network: "vit_base_patch32_224"
+    image_size: !!python/tuple [224, 224]
+    nchannels: 3
+    transformers: True
+    pretrained: True
+    num_classes: 0
+    features_only: True
+
+multi_resolution: False
+
+#baseline: True
+#
+#loss:
+#  RangeMAELoss: RangeMAELoss
+
+baseline: False
+
+loss:
+  MSELoss: MSELoss
+
+path_to_save_model: "models_h5"
+
+#--- path save model
+path_save_model: 'models_h5/'
+name_model: "vit_base_patch32_224"
+
+#evaluate step mafalda biggest dataset
+evaluate_step: 20000
+
+#----- wandb
+wandb: False
+
+train:
+  batch_size: 100
+
+valid:
+  batch_size: 200
+
+test:
+  batch_size: 1
+
+transfer_learning: False
+#Datasets-------------
+#3
+#630
+train_dataset:
+  DatasetSpectrogramTrack2Augment:
+    path_data: None
+    min_shift: 0
+    max_shift: 0
+    validation: False
+    random_augment:
+      amplitude:
+        noise_level_base:
+          max: 5
+          min: 0
+        noise_level_scan_var:
+          max: 3
+          min: 0
+      frequency:
+        noise_level_base:
+          max: 4
+          min: 0
+        noise_level_scan_var:
+          max: 3
+          min: 0
+      phase:
+        noise_level_base:
+          max: 3
+          min: 0
+        noise_level_scan_var:
+          max: 3
+          min: 0
+
+
+valid_dataset:
+  DatasetSpectrogramTrack2Augment:
+    path_data: None
+    min_shift: 0
+    max_shift: 0
+    validation: True
+    random_augment:
+      amplitude:
+        noise_level_base:
+          max: 5
+          min: 0
+        noise_level_scan_var:
+          max: 3
+          min: 0
+      frequency:
+        noise_level_base:
+          max: 4
+          min: 0
+        noise_level_scan_var:
+          max: 3
+          min: 0
+      phase:
+        noise_level_base:
+          max: 3
+          min: 0
+        noise_level_scan_var:
+          max: 3
+          min: 0
+
+##Datasets-------------
+#train_dataset:
+#  DatasetSpectrogramThreeChannels:
+#    path_data: None
+#
+#
+#valid_dataset:
+#  DatasetSpectrogramThreeChannels:
+#    path_data: None
