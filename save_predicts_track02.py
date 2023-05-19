@@ -13,6 +13,7 @@ if __name__ == "__main__":
     parser.add_argument("config_file", type=str, help="Config neural network YAML")
     parser.add_argument("weights", type=str, help="Weights neural network")
     parser.add_argument("test_data_path", type=str, help="Path to test dataset (.h5)")
+    parser.add_argument("save_file_path", type=str, help="add path which the predict .h5 file will be saved")
     args = parser.parse_args()
 
     # Determine device (GPU or CPU)
@@ -74,7 +75,7 @@ if __name__ == "__main__":
             ppm_stacked = np.vstack((ppm_stacked, ppm))
 
     # Save the predicted labels and ppm values to a file
-    save_file = os.path.join("data/save_predicts", "track02.h5")
+    save_file = os.path.join(args.save_file_path, "track02.h5")
     ReadDatasets.write_h5_track2_predict_submission(
         filename=save_file,
         spectra_predict=pred_labels_stacked,
