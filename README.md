@@ -39,8 +39,9 @@ Challenge webpage: https://sites.google.com/view/edited-mrs-rec-challenge/home?a
 
 Getting the predictions from the models:
 
-1. Ensure you have the tracks dataset in the right .h5 format
-To ensure that the H5 file is readable by the provided functions, you need to structure the file with the following datasets:
+1. Ensure you have the test data for each one of the tracks in the right .h5 format.
+
+To execute the model's inference, you must have a h5 file containing the test data for each track, formatted correctly. The h5 file should be structured with the following datasets to ensure compatibility with the provided functions.
 
 **For Track 1:**
 
