@@ -109,11 +109,17 @@ Make sure that the datasets are stored with the exact names and types mentioned 
 
 Instructions for **Tracks 01 and 02**:
 
+Execution:
+
     python save_predicts_track01.py [config_file] [weights] [test_data_path] [save_folder_path]
 
 or 
 
     python save_predicts_track02.py [config_file] [weights] [test_data_path] [save_folder_path]
+
+Example usage:
+
+    python save_predicts_track02.py configs/config_track02.yaml weights/weights_track02.pt data/challenge_data/track_02_test_data.h5 data/save_predicts
 
 Replace `[config_file]` with the path to the YAML configuration for the track.
 
@@ -125,7 +131,14 @@ Replace `[save_folder_path]` with the folder path which the predict .h5 file wil
 
 Instructions for **Track 03**:
 
+Execution:
+
     python save_predicts_track03.py [config_file_down] [config_file_up] [weights_down] [weights_up] [test_data_path] [save_folder_path]
+
+Example usage:
+
+    python save_predicts_track03.py configs/config_track03_2048.yaml configs/config_track03_4096.yaml weights/weights_track03_2048.pt weights/weights_track03_4096.pt data/challenge_data/track_03_test_data.h5 data/save_predicts
+
 
 
 Replace `[config_file_down]` with the path to the YAML configuration for the track 03 downsampled (2048).
