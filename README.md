@@ -58,9 +58,14 @@ Replace [test_data_path] with the path to the track .h5 file containing the test
 
 Replace [save_folder_path] with the folder path which the predict .h5 file will be saved.
 
+Instructions for Track 03:
+
+    python save_predicts_track03.py [config_file_down] [config_file_up] [weights_down] [weights_up] [test_data_path] [save_folder_path]
+
+
 3. The script will perform inference on each sample in the test dataset using the model.
 
-4. The predicted spectra and ppm values will be saved in an output file named track01.h5 or track02.h5 located in the folder [save_file_path] provided.
+4. The predicted spectra and ppm values will be saved in an output file named track01.h5, track02.h5, or track03.h5, depending on the respective script. These files will be located in the folder [save_folder_path] provided.
 
 
 ## Citation
