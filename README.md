@@ -10,6 +10,30 @@ Participants in the challenge were provided with simulated and in vivo data trai
 
 The results of the challenge were summarized and submitted for a joint publication
 
-## Deep Spectral Divers' Solution
+## Table of Contents
 
-The Deep Spectral Divers team's winning solution involved a vision transformer combined with a multilayer perceptron decoder.
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone [repository_url]
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd [project_directory]
+   
+3. Install the required dependencies:
+
+    ```bash
+   pip install -r requirements.txt
+
+
+
+
+ 
