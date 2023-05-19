@@ -115,30 +115,30 @@ or
 
     python save_predicts_track02.py [config_file] [weights] [test_data_path] [save_folder_path]
 
-Replace (`[config_file]`) with the path to the YAML configuration for the track.
+Replace `[config_file]` with the path to the YAML configuration for the track.
 
-Replace (`[weights]`) with the path to the weights file for the track.
+Replace `[weights]` with the path to the weights file for the track.
 
-Replace (`[test_data_path]`) with the path to the track .h5 file containing the test dataset.
+Replace `[test_data_path]` with the path to the track .h5 file containing the test dataset.
 
-Replace (`[save_folder_path]`) with the folder path which the predict .h5 file will be saved.
+Replace `[save_folder_path]` with the folder path which the predict .h5 file will be saved.
 
 Instructions for **Track 03**:
 
     python save_predicts_track03.py [config_file_down] [config_file_up] [weights_down] [weights_up] [test_data_path] [save_folder_path]
 
 
-Replace (`[config_file_down]`) with the path to the YAML configuration for the track 03 downsampled (2048).
+Replace `[config_file_down]` with the path to the YAML configuration for the track 03 downsampled (2048).
 
-Replace (`[config_file_up]`) with the path to the YAML configuration for the track 03 upsampled (4096).
+Replace `[config_file_up]` with the path to the YAML configuration for the track 03 upsampled (4096).
 
-Replace (`[weights_down]`) with the path to the weights file for the track 03 downsampled (2048).
+Replace `[weights_down]` with the path to the weights file for the track 03 downsampled (2048).
 
-Replace (`[weights_up]`) with the path to the weights file for the track 03 upsampled (4096).
+Replace `[weights_up]` with the path to the weights file for the track 03 upsampled (4096).
 
-Replace (`[test_data_path]`) with the path to the track .h5 file containing the test dataset.
+Replace `[test_data_path]` with the path to the track .h5 file containing the test dataset.
 
-Replace (`[save_folder_path]`) with the folder path which the predict .h5 file will be saved.
+Replace `[save_folder_path]` with the folder path which the predict .h5 file will be saved.
 
 3. The script will perform inference on each sample in the test dataset using the model.
 
