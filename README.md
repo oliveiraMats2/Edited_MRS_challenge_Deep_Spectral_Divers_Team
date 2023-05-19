@@ -1,6 +1,6 @@
 # Edited_MRS_challenge_Deep_Spectral_Divers_Team
 
-This repository contains the code for the Deep Spectral Divers team's submission to the Edited-MRS Reconstruction Challenge. The objective of the challenge is to investigate machine learning models that can reconstruct spectra using significantly less data than current Edited-MRS scans, resulting in faster scan times.
+This repository contains the code for the Deep Spectral Divers team's submission to the Edited-MRS Reconstruction Challenge. It enables inference using the models used in the challenge, aiming to reconstruct GABA spectra faster by utilizing less data compared to current Edited-MRS scans.
 
 ## Challenge Description
 
