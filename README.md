@@ -59,5 +59,6 @@ Replace [test_data_path] with the path to the track .h5 file containing the test
 
 If you use our model inference in your research please cite
 
-Deep Spectral Divers. (2023). Code repository for the Deep Spectral Divers team's submission to the Edited-MRS Reconstruction Challenge. Retrieved from https://github.com/deep-spectral-divers/reconstruction-challenge (Dias, G., Ueda, L., Costa, P., Rittner, L,Oliveira, M., Dertkigil, S.) 
+
+      Deep Spectral Divers. (2023). Code repository for the Deep Spectral Divers team's submission to the Edited-MRS Reconstruction Challenge. Retrieved from https://github.com/oliveiraMats2/Edited_MRS_challenge_Deep_Spectral_Divers_Team (Dias, G., Ueda, L., Costa, P., Rittner, L,Oliveira, M., Dertkigil, S.). 
  
