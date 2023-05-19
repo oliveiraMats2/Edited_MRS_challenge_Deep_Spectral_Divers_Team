@@ -16,7 +16,7 @@ if __name__ == "__main__":
     parser.add_argument("weights_down", type=str, help="WEIGHTs neural network for the 2048 model")
     parser.add_argument("weights_up", type=str, help="WEIGHTs neural network for the 4096 model")
     parser.add_argument("test_data_path", type=str, help="add test path dataset .h5")
-    parser.add_argument("save_file_path", type=str, help="add path which the predict .h5 file will be saved")
+    parser.add_argument("save_folder_path", type=str, help="add folder path which the predict .h5 file will be saved")
 
     # Parse the command-line arguments
     args = parser.parse_args()
@@ -114,10 +114,10 @@ if __name__ == "__main__":
                 ppm_stacked[model_type] = np.vstack((ppm_stacked[model_type], ppm))
 
     # Define the save file path
-    save_file = os.path.join(args.save_file_path, "track03.h5")
+    save_path= os.path.join(args.save_folder_path, "track03.h5")
 
     # Write the predicted labels and ppm values to an .h5 file using the ReadDatasets class method
-    ReadDatasets.write_h5_track3_predict_submission(filename=save_file,
+    ReadDatasets.write_h5_track3_predict_submission(filename=save_path,
                                                     spectra_predict_down=pred_labels_stacked["down"],
                                                     ppm_down=ppm_stacked["down"],
                                                     spectra_predict_up=pred_labels_stacked["up"],

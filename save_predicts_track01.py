@@ -13,7 +13,7 @@ if __name__ == "__main__":
     parser.add_argument("config_file", type=str, help="config neural network yaml")
     parser.add_argument("weights", type=str, help="WEIGHTs neural network")
     parser.add_argument("test_data_path", type=str, help="add test path dataset .h5")
-    parser.add_argument("save_file_path", type=str, help="add path which the predict .h5 file will be saved")
+    parser.add_argument("save_folder_path", type=str, help="add folder path which the predict .h5 file will be saved")
     args = parser.parse_args()
 
     # Check if CUDA is available and set the device accordingly
@@ -88,9 +88,9 @@ if __name__ == "__main__":
             ppm_stacked = np.vstack((ppm_stacked, ppm))
 
     # Define the path to save the predicted results
-    save_file = os.path.join(args.save_file_path, "track01.h5")
+    save_path = os.path.join(args.save_folder_path, "track01.h5")
 
     # Write the predicted spectra and ppm to the output file
-    ReadDatasets.write_h5_track1_predict_submission(filename=save_file,
+    ReadDatasets.write_h5_track1_predict_submission(filename=save_path,
                                                     spectra_predict=pred_labels_stacked,
                                                     ppm=ppm_stacked)
