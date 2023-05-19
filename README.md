@@ -30,7 +30,7 @@ Challenge webpage: https://sites.google.com/view/edited-mrs-rec-challenge/home?a
    ```bash
    cd [project_directory]
    
-3. Check the Python version in requirements.txt and Install the required dependencies:
+3. Check the Python version in requirements.txt and install the required dependencies:
 
     ```bash
    pip install -r requirements.txt
