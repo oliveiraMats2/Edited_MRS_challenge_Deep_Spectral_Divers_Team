@@ -40,7 +40,71 @@ Challenge webpage: https://sites.google.com/view/edited-mrs-rec-challenge/home?a
 Getting the predictions from the models:
 
 1. Ensure you have the tracks dataset in the right .h5 format
-2. Run the script:
+To ensure that the H5 file is readable by the provided functions, you need to structure the file with the following datasets:
+
+**For Track 1:**
+
+- Dataset Name: `"ppm"`
+  - Dataset Type: 1D array (`np.ndarray`)
+  - Contains the ppm values.
+
+- Dataset Name: `"t"`
+  - Dataset Type: 1D array (`np.ndarray`)
+  - Contains the t values.
+
+- Dataset Name: `"transients"`
+  - Dataset Type: 1D array (`np.ndarray`)
+  - Contains the transients data.
+
+**For Track 2:**
+
+- Dataset Name: `"ppm"`
+  - Dataset Type: 1D array (`np.ndarray`)
+  - Contains the ppm values.
+
+- Dataset Name: `"t"`
+  - Dataset Type: 1D array (`np.ndarray`)
+  - Contains the t values.
+
+- Dataset Name: `"transient_fids"`
+  - Dataset Type: 1D array (`np.ndarray`)
+  - Contains the transients data.
+
+**For Track 3:**
+
+- Group Name: `"data_2048"`
+  - Contains datasets for downsampled data.
+
+  - Dataset Name: `"ppm"`
+    - Dataset Type: 1D array (`np.ndarray`)
+    - Contains the downsampled ppm values.
+
+  - Dataset Name: `"t"`
+    - Dataset Type: 1D array (`np.ndarray`)
+    - Contains the downsampled t values.
+
+  - Dataset Name: `"transient_fids"`
+    - Dataset Type: 1D array (`np.ndarray`)
+    - Contains the downsampled transients data.
+
+- Group Name: `"data_4096"`
+  - Contains datasets for upsampled data.
+
+  - Dataset Name: `"ppm"`
+    - Dataset Type: 1D array (`np.ndarray`)
+    - Contains the upsampled ppm values.
+
+  - Dataset Name: `"t"`
+    - Dataset Type: 1D array (`np.ndarray`)
+    - Contains the upsampled t values.
+
+  - Dataset Name: `"transient_fids"`
+    - Dataset Type: 1D array (`np.ndarray`)
+    - Contains the upsampled transients data.
+
+Make sure that the datasets are stored with the exact names and types mentioned above. The functions rely on these specific dataset names to extract the required data.
+
+3. Run the script:
 
 Instructions for **Tracks 01 and 02**:
 
