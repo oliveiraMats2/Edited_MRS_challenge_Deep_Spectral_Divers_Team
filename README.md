@@ -42,7 +42,7 @@ Prepare the input files:
 1. Ensure you have the tracks dataset in the right .h5 format
 2. Run the script:
 
-Instructions for Tracks 01 and 02:
+Instructions for **Tracks 01 and 02**:
 
     python save_predicts_track01.py [config_file] [weights] [test_data_path] [save_folder_path]
 
@@ -58,10 +58,22 @@ Replace [test_data_path] with the path to the track .h5 file containing the test
 
 Replace [save_folder_path] with the folder path which the predict .h5 file will be saved.
 
-Instructions for Track 03:
+Instructions for **Track 03**:
 
     python save_predicts_track03.py [config_file_down] [config_file_up] [weights_down] [weights_up] [test_data_path] [save_folder_path]
 
+
+Replace [config_file_down] with the path to the YAML configuration for the track 03 downsampled (2048).
+
+Replace [config_file_up] with the path to the YAML configuration for the track 03 upsampled (4096).
+
+Replace [weights_down] with the path to the weights file for the track 03 downsampled (2048).
+
+Replace [weights_up] with the path to the weights file for the track 03 upsampled (4096).
+
+Replace [test_data_path] with the path to the track .h5 file containing the test dataset.
+
+Replace [save_folder_path] with the folder path which the predict .h5 file will be saved.
 
 3. The script will perform inference on each sample in the test dataset using the model.
 
