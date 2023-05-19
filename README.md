@@ -45,7 +45,9 @@ For Tracks 01 and 02:
     python script.py [config_file] [weights] [test_data_path] [save_file_path]
 
 Replace [config_file] with the path to the YAML configuration for the track.
+
 Replace [weights] with the path to the weights file for the track.
+
 Replace [test_data_path] with the path to the track .h5 file containing the test dataset.
 
 3. The script will perform inference on each sample in the test dataset using the model.
