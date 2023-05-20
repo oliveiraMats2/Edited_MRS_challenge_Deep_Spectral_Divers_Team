@@ -157,7 +157,7 @@ Replace `[save_folder_path]` with the folder path which the predict .h5 file wil
 
 4. The script will perform inference on each sample in the test dataset using the model.
 
-5. The predicted spectra and ppm values will be saved in an output file named track01.h5, track02.h5, or track03.h5, depending on the respective script. These files will be located in the folder [save_folder_path] provided.
+5. The predicted spectra and ppm values will be saved in an output file named track01.h5, track02.h5, or track03.h5, depending on the respective script. These files will be located in the folder `[save_folder_path]` provided.
 
 
 ## Citation
@@ -165,5 +165,5 @@ Replace `[save_folder_path]` with the folder path which the predict .h5 file wil
 If you use our model inference in your research please cite
 
 
-      Deep Spectral Divers. (2023). Code repository for the Deep Spectral Divers team's submission to the Edited-MRS Reconstruction Challenge. Retrieved from https://github.com/oliveiraMats2/Edited_MRS_challenge_Deep_Spectral_Divers_Team (Dias, G., Ueda, L., Costa, P., Rittner, L,Oliveira, M., Dertkigil, S.). 
+      Deep Spectral Divers. (2023). Code repository for the Deep Spectral Divers team's submission to the Edited-MRS Reconstruction Challenge. Retrieved from https://github.com/oliveiraMats2/Edited_MRS_challenge_Deep_Spectral_Divers_Team (Dias, G., Ueda, L., Costa, P., Rittner, L., Oliveira, M., Dertkigil, S.). 
  
