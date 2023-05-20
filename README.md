@@ -105,6 +105,8 @@ To execute the model's inference, you must have a h5 file containing the test da
 
 Make sure that the datasets are stored with the exact names and types mentioned above. The functions rely on these specific dataset names to extract the required data.
 
+2. Get the trained weights from each model at https://drive.google.com/drive/folders/1NJ1OGs-W9GZE9XMHvctKs67kjNOtY74O?usp=share_link
+
 3. Run the script:
 
 Instructions for **Tracks 01 and 02**:
@@ -153,9 +155,9 @@ Replace `[test_data_path]` with the path to the track .h5 file containing the te
 
 Replace `[save_folder_path]` with the folder path which the predict .h5 file will be saved.
 
-3. The script will perform inference on each sample in the test dataset using the model.
+4. The script will perform inference on each sample in the test dataset using the model.
 
-4. The predicted spectra and ppm values will be saved in an output file named track01.h5, track02.h5, or track03.h5, depending on the respective script. These files will be located in the folder [save_folder_path] provided.
+5. The predicted spectra and ppm values will be saved in an output file named track01.h5, track02.h5, or track03.h5, depending on the respective script. These files will be located in the folder [save_folder_path] provided.
 
 
 ## Citation
