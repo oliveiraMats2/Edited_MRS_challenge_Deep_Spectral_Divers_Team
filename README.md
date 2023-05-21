@@ -1,6 +1,6 @@
 # Edited_MRS_challenge_Deep_Spectral_Divers_Team
 
-This repository contains the code for the Deep Spectral Divers team's submission to the Edited-MRS Reconstruction Challenge. It enables inference using the models used in the challenge, aiming to reconstruct GABA spectra faster by utilizing less data compared to current Edited-MRS scans. For each Track we trained a separate model, ending with four final models: Track 01, Track 02, Track 03 with 2048 data points and Track 03 with 4096 data points.
+This repository contains the code for the Deep Spectral Divers team's submission to the Edited-MRS Reconstruction Challenge. It enables inference using the models used in the challenge, aiming to reconstruct GABA spectra faster by utilizing less data compared to current Edited-MRS scans. For each Track we trained a separate model, ending with four final models: Track 01, Track 02, Track 03 with 2048 data points and Track 03 with 4096 data points. Our team was considered the overall winner of the challenge.
 
 ## Challenge Description
 
@@ -51,7 +51,7 @@ To execute the model's inference, you must have an h5 file containing the correc
 
 - Dataset Name: `"t"`
   - Dataset Type: 1D array (`np.ndarray`)
-  - Contains the t values.
+  - Contains the time values.
 
 - Dataset Name: `"transients"`
   - Dataset Type: 1D array (`np.ndarray`)
@@ -65,7 +65,7 @@ To execute the model's inference, you must have an h5 file containing the correc
 
 - Dataset Name: `"t"`
   - Dataset Type: 1D array (`np.ndarray`)
-  - Contains the t values.
+  - Contains the time values.
 
 - Dataset Name: `"transient_fids"`
   - Dataset Type: 1D array (`np.ndarray`)
@@ -82,7 +82,7 @@ To execute the model's inference, you must have an h5 file containing the correc
 
   - Dataset Name: `"t"`
     - Dataset Type: 1D array (`np.ndarray`)
-    - Contains the downsampled t values.
+    - Contains the downsampled time values.
 
   - Dataset Name: `"transient_fids"`
     - Dataset Type: 1D array (`np.ndarray`)
@@ -97,7 +97,7 @@ To execute the model's inference, you must have an h5 file containing the correc
 
   - Dataset Name: `"t"`
     - Dataset Type: 1D array (`np.ndarray`)
-    - Contains the upsampled t values.
+    - Contains the upsampled time values.
 
   - Dataset Name: `"transient_fids"`
     - Dataset Type: 1D array (`np.ndarray`)
