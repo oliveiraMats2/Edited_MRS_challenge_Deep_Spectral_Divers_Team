@@ -28,7 +28,7 @@ Challenge webpage: https://sites.google.com/view/edited-mrs-rec-challenge/home?a
 2. Navigate to the project directory:
 
    ```bash
-   cd [project_directory]
+   cd Edited_MRS_challenge_Deep_Spectral_Divers_Team
    
 3. Check the Python version in requirements.txt and install the required dependencies:
 
