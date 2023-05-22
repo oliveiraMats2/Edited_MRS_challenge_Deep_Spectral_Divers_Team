@@ -23,7 +23,7 @@ Challenge webpage: https://sites.google.com/view/edited-mrs-rec-challenge/home?a
 1. Clone the repository:
 
    ```bash
-   git clone [repository_url]
+   git clone https://github.com/oliveiraMats2/Edited_MRS_challenge_Deep_Spectral_Divers_Team.git
 
 2. Navigate to the project directory:
 
@@ -113,15 +113,15 @@ Instructions for **Tracks 01 and 02**:
 
 Execution:
 
-    python save_predicts_track01.py [config_file] [weights] [test_data_path] [save_folder_path]
+    python3 save_predicts_track01.py [config_file] [weights] [test_data_path] [save_folder_path]
 
 or 
 
-    python save_predicts_track02.py [config_file] [weights] [test_data_path] [save_folder_path]
+    python3 save_predicts_track02.py [config_file] [weights] [test_data_path] [save_folder_path]
 
 Example usage:
 
-    python save_predicts_track02.py configs/config_track02.yaml weights/weights_track02.pt data/challenge_data/track_02_test_data.h5 data/save_predicts
+    python3 save_predicts_track02.py configs/config_track02.yaml weights/weights_track02.pt data/challenge_data/track_02_test_data.h5 data/save_predicts
 
 Replace `[config_file]` with the path to the YAML configuration for the track.
 
@@ -135,11 +135,11 @@ Instructions for **Track 03**:
 
 Execution:
 
-    python save_predicts_track03.py [config_file_down] [config_file_up] [weights_down] [weights_up] [test_data_path] [save_folder_path]
+    python3 save_predicts_track03.py [config_file_down] [config_file_up] [weights_down] [weights_up] [test_data_path] [save_folder_path]
 
 Example usage:
 
-    python save_predicts_track03.py configs/config_track03_2048.yaml configs/config_track03_4096.yaml weights/weights_track03_2048.pt weights/weights_track03_4096.pt data/challenge_data/track_03_test_data.h5 data/save_predicts
+    python3 save_predicts_track03.py configs/config_track03_2048.yaml configs/config_track03_4096.yaml weights/weights_track03_2048.pt weights/weights_track03_4096.pt data/challenge_data/track_03_test_data.h5 data/save_predicts
 
 
 
