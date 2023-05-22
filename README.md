@@ -2,7 +2,7 @@
 
 This repository contains the code for the Deep Spectral Divers team's submission to the Edited-MRS Reconstruction Challenge. It enables inference using the models used in the challenge, aiming to reconstruct GABA spectra faster by utilizing less data compared to current Edited-MRS scans. For each Track we trained a separate model, ending with four final models: Track 01, Track 02, Track 03 with 2048 data points and Track 03 with 4096 data points. 
 
-Our team was considered the overall winner of the challenge.
+Our team was the overall winner of the challenge.
 
 ## Challenge Description
 
