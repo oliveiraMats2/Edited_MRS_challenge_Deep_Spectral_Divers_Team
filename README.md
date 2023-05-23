@@ -1,6 +1,6 @@
 # Edited_MRS_challenge_Deep_Spectral_Divers_Team
 
-This repository contains the code for the Deep Spectral Divers team's submission to the Edited-MRS Reconstruction Challenge. It enables inference using the models used in the challenge, aiming to reconstruct GABA spectra faster by utilizing less data compared to current Edited-MRS scans. For each Track we trained a separate model, ending with four final models: Track 01, Track 02, Track 03 with 2048 data points and Track 03 with 4096 data points. 
+This repository contains the code for the Deep Spectral Divers team's submission to the Edited-MRS Reconstruction Challenge (2023). It enables inference using the models used in the challenge, aiming to reconstruct GABA spectra faster by utilizing less data compared to current Edited-MRS scans. For each Track we trained a separate model, ending with four final models: Track 01, Track 02, Track 03 with 2048 data points and Track 03 with 4096 data points. 
 
 Our team was the overall winner of the challenge.
 
@@ -10,9 +10,10 @@ Edited Magnetic Resonance Spectroscopy (MRS) is used to quantify metabolites tha
 
 Participants in the challenge were provided with simulated and in vivo data training sets representing GABA-edited MEGA-PRESS scans composed of two subspectra (ON and OFF). Scripts for data augmentation, including adding noise, frequency, and phase shifts, were also provided. The models submitted by the teams were evaluated on simulated data (Track 01), homogeneous in vivo data (single-vendor) (Track 02), and heterogeneous in vivo data (multi-vendor) (Track 03) using quantitative metrics such as mean squared error, signal-to-noise ratio, linewidth, and peak shape.
 
-The results of the challenge were summarized and submitted for a joint publication
+The results of the challenge were presented at the IEEE International Symposium on Biomedical Imaging (ISBI) conference held in Cartagena, Colombia on April 18th, 2023. The challenge outcomes were summarized and submitted for a joint publication.
 
-Challenge webpage: https://sites.google.com/view/edited-mrs-rec-challenge/home?authuser=0
+For more details about the challenge, you can visit the [challenge webpage](https://sites.google.com/view/edited-mrs-rec-challenge/home?authuser=0).
+
 
 ## Table of Contents
 
