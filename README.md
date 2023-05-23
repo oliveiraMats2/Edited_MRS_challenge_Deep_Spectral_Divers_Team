@@ -173,7 +173,7 @@ If you use our model inference in your research please cite
         title = {Deep Spectral Divers},
         year = {2023},
         howpublished = {Code repository for the Deep Spectral Divers team's submission to the Edited-MRS Reconstruction Challenge},
-        url = {[https://github.com/oliveiraMats2/Edited_MRS_challenge_Deep_Spectral_Divers_Team](https://github.com/MICLab-Unicamp/MICLab-2023-ISBI-MRS-Challenge)}
+        url = {https://github.com/oliveiraMats2/Edited_MRS_challenge_Deep_Spectral_Divers_Team](https://github.com/MICLab-Unicamp/MICLab-2023-ISBI-MRS-Challenge}
       }
 
 
