@@ -168,12 +168,13 @@ Replace `[save_folder_path]` with the folder path which the predict .h5 file wil
 If you use our model inference in your research please cite
 
 
-      @misc{DeepSpectralDivers2023,
-      author = {Dias, G. and Ueda, L. and Costa, P. and Rittner, L. and Oliveira, M. and Dertkigil, S.},
-      title = {Deep Spectral Divers},
-       year = {2023},
-      howpublished = {Code repository for the Deep Spectral Divers team's submission to the Edited-MRS Reconstruction Challenge},
-      url = {https://github.com/oliveiraMats2/Edited_MRS_challenge_Deep_Spectral_Divers_Team},
+      @misc{MICLab-2023-ISBI-MRS-Challenge,
+        author = {Dias, G. and Ueda, L. and Oliveira, M. and Dertkigil, S. and Costa, P. and Rittner, L.},
+        title = {Deep Spectral Divers},
+        year = {2023},
+        howpublished = {Code repository for the Deep Spectral Divers team's submission to the Edited-MRS Reconstruction Challenge},
+        url = {[https://github.com/oliveiraMats2/Edited_MRS_challenge_Deep_Spectral_Divers_Team](https://github.com/MICLab-Unicamp/MICLab-2023-ISBI-MRS-Challenge)}
       }
+
 
  
