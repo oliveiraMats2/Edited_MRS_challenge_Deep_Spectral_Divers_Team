@@ -26,12 +26,12 @@ For more details about the challenge, you can visit the [challenge webpage](http
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/oliveiraMats2/Edited_MRS_challenge_Deep_Spectral_Divers_Team.git
+   git clone https://github.com/MICLab-Unicamp/MICLab-2023-ISBI-MRS-Challenge.git
 
 2. Navigate to the project directory:
 
    ```bash
-   cd Edited_MRS_challenge_Deep_Spectral_Divers_Team
+   cd MICLab-2023-ISBI-MRS-Challenge
    
 3. Check the Python version in requirements.txt and install the required dependencies:
 
